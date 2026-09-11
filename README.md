@@ -138,8 +138,7 @@ the OOM killer or cause the system to thrash.
 
 The build respects the `ECC_JOBS` environment variable to override the number
 of parallel compilation jobs.
-
-```bash
+```
 # Default: Ninja uses all available cores (may cause OOM).
 nix build .#default
 
@@ -148,7 +147,7 @@ ECC_JOBS=4 nix build .#default --impure
 
 # Single job (most memory-safe, recommended for constrained environments).
 ECC_JOBS=1 nix build .#default --impure
-
+```
 ## Repository Pointers
 
 | Path | Description |
